@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Ubuntu-24.04-orange?logo=ubuntu" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg" />
-  <img src="https://img.shields.io/github/stars/username/ubuntu-24-config?style=social" />
+  <img src="https://img.shields.io/github/stars/dwiwijaya/ubuntu-24-config?style=social" />
 </p>
 
 ---
