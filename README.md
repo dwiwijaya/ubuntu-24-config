@@ -1,140 +1,125 @@
-# 🐧 Ubuntu 24 LTS Personal Configuration
+<h1 align="center">🐧 My Ubuntu 24.04 LTS Setup & Dotfiles</h1>
+<p align="center">Custom configuration for my personal Ubuntu laptop — modern, minimal, developer-friendly.</p>
 
-> My personal setup guide and dotfiles for Ubuntu 24 LTS on my laptop.  
-> This repo is intended to make reinstalling or setting up a new machine easier and more consistent.
-
----
-
-## 📌 Table of Contents
-
-- [Overview](#overview)
-- [System Info](#system-info)
-- [UI / Desktop Setup](#ui--desktop-setup)
-- [Development Environment](#development-environment)
-- [System Tweaks](#system-tweaks)
-- [Network & Internet](#network--internet)
-- [Privacy & Security](#privacy--security)
-- [Favorite Apps](#favorite-apps)
-- [Dotfiles](#dotfiles)
-- [Screenshots](#screenshots)
-- [License](#license)
+<p align="center">
+  <img src="https://img.shields.io/badge/Ubuntu-24.04-orange?logo=ubuntu" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+  <img src="https://img.shields.io/github/stars/username/ubuntu-24-config?style=social" />
+</p>
 
 ---
 
-## 🧭 Overview
+## 🚀 About This Project
 
-This repository contains:
-- Notes and commands for setting up Ubuntu 24.04 LTS
-- Dotfiles for terminal and development tools
-- UI and theming setup
-- Personal tweaks and preferences
-- Scripts for automation (coming soon)
+This repository is my personal yet sharable guide to set up a clean and productive development environment on **Ubuntu 24.04 LTS**.  
+It covers everything from UI customization, development tools, system tweaks, privacy settings, and more — perfect for developers or tinkerers who like to tweak their OS.
+
+> 🔧 _"Tweak once, install forever."_ — That's the goal.
 
 ---
 
-## 🖥️ System Info
+## 🧠 Features & Highlights
 
-- **OS**: Ubuntu 24.04 LTS "Noble Numbat"
-- **Laptop**: [Your Laptop Model]
-- **DE**: GNOME 46
-- **Shell**: Zsh with Oh-My-Zsh + Starship
-- **Window Theme**: [Theme Name]
-- **Icons**: [Icon Pack]
-- **Font**: JetBrains Mono / Fira Code
-
----
-
-## 🎨 UI / Desktop Setup
-
-- GNOME Extensions used:
-  - Dash to Dock
-  - Blur my Shell
-  - Clipboard Indicator
-- Fonts, scaling, and HiDPI settings
-- Terminal with transparency + custom prompt (Starship)
-
-➡️ [UI Setup Details](./ui/README.md)
+✅ Minimal & clean GNOME setup  
+✅ Powerful terminal with Zsh + Starship + tmux  
+✅ Full-stack dev tools ready to go  
+✅ Dotfiles & custom aliases  
+✅ Privacy-focused and battery optimized  
+✅ Documented step-by-step with screenshots  
 
 ---
 
-## 💻 Development Environment
+## 📂 Directory Structure
 
-Languages:
-- Node.js (via nvm)
-- PHP + Composer
-- Python + pip + venv
-- Git + GitHub CLI
-
-Tools:
-- Docker & Docker Compose
-- VS Code + Extensions
-- PostgreSQL, Redis
-
-➡️ [Dev Setup Details](./dev/README.md)
+```bash
+.
+├── ui/           # GNOME, themes, fonts, extensions
+├── dev/          # Programming environments, editors, databases
+├── tweaks/       # System performance, power, keyboard, etc
+├── dotfiles/     # My terminal and dev tool config files
+├── scripts/      # Setup automation (optional)
+├── screenshots/  # Preview images
+└── README.md
+````
 
 ---
 
-## ⚙️ System Tweaks
+## 🖼️ Preview
 
-- Performance tuning (swap, preload, etc.)
-- TLP / auto-cpufreq for battery
-- Custom keyboard shortcuts
-- Cron jobs and cleanup automation
-
-➡️ [System Tweaks](./tweaks/README.md)
+<p align="center">
+  <img src="screenshots/desktop.png" alt="Desktop" width="800">
+</p>
 
 ---
 
-## 🌐 Network & Internet
+## 🛠️ What’s Inside?
 
-- SSH setup with keys
-- VPN configuration (WireGuard)
-- DNS and proxy settings
+### 🎨 UI / Desktop
+
+* GNOME Extensions: Dash to Dock, Blur My Shell, Clipboard Indicator
+* GTK Theme: \[Your Favorite]
+* Icon Pack: \[Your Favorite]
+* Font: JetBrains Mono, Fira Code
+
+### 💻 Development
+
+* Node.js, PHP, Python, Go, Rust
+* Docker, Git, PostgreSQL, Redis
+* VS Code with extensions
+
+### ⚙️ System Tweaks
+
+* TLP for battery life
+* Custom GNOME shortcuts
+* Performance tuning (swap, preload)
+
+### 🔐 Privacy & Security
+
+* UFW firewall
+* GNOME privacy hardening
+* SSH keys + GitHub CLI
+
+### 📦 Favorite Apps
+
+* Firefox / Brave
+* Obsidian / Joplin
+* Spotify / VLC
+* Telegram / Discord
 
 ---
 
-## 🔐 Privacy & Security
+## 📥 Getting Started (WIP)
 
-- GNOME privacy settings
-- App permissions
-- UFW firewall setup
-
----
-
-## 📦 Favorite Apps
-
-- Firefox / Brave
-- Spotify
-- Obsidian
-- Telegram / Discord
-- Joplin / Notion (via web)
+Coming soon: auto setup scripts with optional components
+Manual instructions available in each folder
 
 ---
 
 ## ⚙️ Dotfiles
 
-This repo includes configs for:
-- `.zshrc`
-- `.bashrc`
-- `.gitconfig`
-- `.vimrc`
-- `starship.toml`
-- `tmux.conf`
+Included:
 
-You can manage these using symlink tools like `chezmoi` or `stow`.
+* `.zshrc`
+* `.gitconfig`
+* `starship.toml`
+* `.vimrc`
+* `.tmux.conf`
 
-➡️ [Dotfiles Folder](./dotfiles/)
+Symlink tools: `stow`, `chezmoi`, or just copy-paste 😄
 
 ---
 
-## 🖼️ Screenshots
+## 🌐 Follow & Contribute
 
-| Desktop | Terminal | VS Code |
-|--------|----------|---------|
-| ![](screenshots/desktop.png) | ![](screenshots/terminal.png) | ![](screenshots/vscode.png) |
+✨ Give this repo a star if it's useful!
+🛠️ Suggestions or PRs are welcome!
 
 ---
 
 ## 📄 License
 
-MIT License © [Your Name]
+MIT © [Dwi Wijaya](https://github.com/dwiwijaya)
+
+
+
+
