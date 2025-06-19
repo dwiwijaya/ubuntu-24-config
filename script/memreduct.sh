@@ -42,22 +42,27 @@ function log_event() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $msg" | sudo tee -a "$LOG_FILE" > /dev/null
 }
 
+# Persentase threshold
+THRESHOLD_PERCENT=80
+
 # Auto-cleaning loop
 function auto_loop() {
-    echo -e "${CYAN}🧠 Auto-clean mode aktif. Threshold: ${THRESHOLD_MB}MB Free RAM${RESET}"
+    echo -e "${CYAN}🧠 Auto-clean mode aktif. Threshold: ${THRESHOLD_PERCENT}% Used RAM${RESET}"
     while true; do
-        free_mem=$(free -m | awk '/^Mem:/ { print $4 }')
+        read total used <<< $(free -m | awk '/^Mem:/ {print $2, $3}')
+        used_percent=$(( 100 * used / total ))
 
-        if [ "$free_mem" -lt "$THRESHOLD_MB" ]; then
-            echo -e "${RED}⚠️  Low memory detected (${free_mem}MB free). Triggering cleaning...${RESET}"
+        if [ "$used_percent" -ge "$THRESHOLD_PERCENT" ]; then
+            echo -e "${RED}⚠️  Memory Usage ${used_percent}% (used: ${used}MB). Triggering cleaning...${RESET}"
             clean_ram
         else
-            echo -e "${GREEN}✅ Memory OK (${free_mem}MB free)${RESET}"
+            echo -e "${GREEN}✅ Memory OK (${used_percent}% used)${RESET}"
         fi
 
         sleep $SLEEP_INTERVAL
     done
 }
+
 
 # Menu
 function main_menu() {
