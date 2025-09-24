@@ -102,7 +102,7 @@ Edit `~/.cloudflared/config.yml`:
 
 ```yaml
 tunnel: serverku
-credentials-file: /home/username/.cloudflared/serverku.json
+credentials-file: /home/username/.cloudflared/uuid.json
 
 ingress:
   - hostname: app.dwiwijaya.com
